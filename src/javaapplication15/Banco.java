@@ -51,8 +51,8 @@ public class Banco {
     public double getAllProfit(){
         double Total = 0;
         for (Cliente cliente : this.Cliente.values()) {
-            for(Asset Asset : cliente.getAsset()){
-                Total+=Asset.getProfit();
+            for(Asset asset : cliente.getAsset()){
+                Total+=asset.getProfit();
             }            
         }
         return Total;
